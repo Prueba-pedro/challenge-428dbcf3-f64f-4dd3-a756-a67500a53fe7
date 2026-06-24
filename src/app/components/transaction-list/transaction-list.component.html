@@ -1,0 +1,10 @@
+<div *ngIf="!error">
+  <ul>
+    <li *ngFor="let transaction of transactions">
+      {{ transaction.date }} - {{ transaction.amount }} - {{ transaction.description }}
+    </li>
+  </ul>
+</div>
+<div *ngIf="error">
+  <p>{{ error }}</p>
+</div>
